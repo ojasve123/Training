@@ -1,0 +1,228 @@
+create schema afi;create table flights(flno int(8),from_airport varchar(50),to_airport varchar(50),distance int(5), departs time,arrives time,price int(5));create table aircraft(a_id int(8),a_name varchar(50),cruising_range int(5));create table employees(e_id int(4),e_name varchar(25),salary int(8));create table certified(e_id int(4),a_id int(8));alter table flights add a_id int(8);alter table flights modify flno int(8) primary key; alter table flights add  foreign key a_id references aircraft(a_id); alter table flights add  foreign key a_id references aircraft(a_id);alter table aircraft modify a_id int(8) primary key;alter table aircraft modify a_id int(8) primary key;
+ alter table flights add  foreign key (a_id) references aircraft(a_id);alter table employees modify e_id int(4) primary key;alter table certified add  foreign key (a_id) references aircraft(a_id);alter table certified add  foreign key (e_id) references employees(e_id);
+ insert into aircraft values(5001,"boeing747",1200);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into aircraft values(5002,"boeing787",1500);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into aircraft values(5003,"boeing757",800);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into aircraft values(5004,"boeing717",1800);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into aircraft values(5005,"airbus a380",3800);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into aircraft values(5006,"comac c919",500);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into aircraft values(5007,"pilatus pc-12",700);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into aircraft values(5008,"antonov an-148",550);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into flights values(12344827,"new york","chicago",900,'14:00:00','00:00:00',1500,5001);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into flights values(12344828,"chicago","new york",900,'03:00:00','13:30:00',1500,5002);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into flights values(12344868,"chicago","madison",600,'03:00:00','05:30:00'
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into flights values(12344878,"chicago","los angeles",3000,'01:00:00','09:30:00',800,5003);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into flights values(12344879,"los angeles","chicago",3000,'11:00:00','18:30:00',800,5004);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into flights values(12345779,"los angeles","honolulu",9000,'00:00:00','18:00:00',8000,5005);
+Query OK, 1 row affected (0.06 sec)
+(a) select distinct a.a_name from aircraft a,certified c,employees e where a.a_id=c.a_id and c.e_id=e.e_id and not exists (select * from employees e1 where e1.e_id=e.e_id and e1.salary<80000);
+
+(e) select distinct employees.e_name from employees inner join certified on certified.e_id=employees.e_id inner join aircraft on certified.a_id=aircraft.a_id where aircraft.a_name regexp '^boeing';
+(j) select (avg(salary)-(select avg(salary) from employees inner join certified on certified.e_id=employees.e_id)) from employees;
+(b)  select certified.e_id,max(cruising_range) from aircraft inner join certified on certified.a_id=aircraft.a_id inner join employees on employees.e_id=certified.e_id  group by certified.e_id having count(certified.e_id)>3 ;
+(h) select employees.e_name from employees inner join certified on certified.e_id=employees.e_id inner join aircraft on certified.a_id=aircraft.a_id where aircraft.a_name not like 'boeing%' and aircraft.cruising_range >3000 ;
+(k) select  distinct employees.e_name , employees.salary from employees inner join certified on certified.e_id<>employees.e_id where (employees.salary)>(select avg(employees.salary) from employees inner join certified on certified.e_id=employees.e_id);
+(l) select distinct employees.e_name from employees inner join certified on employees.e_id=certified.e_id inner join aircraft on aircraft.a_id=certified.a_id where aircraft.cruising_range>1000;
+(n) select distinct employees.e_name from employees inner join certified on certified.e_id=employees.e_id inner join aircraft on certified.a_id=aircraft.a_id where aircraft.a_name regexp '^boeing' and aircraft.cruising_range>1000;
+(c) select employees.e_name from employees inner join certified on employees.e_id= certified.e_id inner join aircraft on aircraft.a_id=certified.a_id inner join flights on flights.a_id=aircraft.a_id where from_airport="los angeles" and to_airport="honolulu" and (employees.salary*12)<flights.price;
+(f)select flights.a_id from aircraft inner join flights on aircraft.a_id=flights.a_id where flights.distance<aircraft.cruising_range and  from_airport="los angeles" and to_airport="chicago" ;
+(d)select aircraft.a_name,avg(employees.salary) from aircraft join certified on certified.a_id=aircraft.a_id join employees on employees.e_id=certified.e_id where cruising_range>1000 group by aircraft.a_name;
+(g) select aircraft.a_name, employees.salary  from aircraft join certified on (certified.a_id=aircraft.a_id) join employees on (employees.e_id=certified.e_id) where aircraft.cruising_range>1000;
+(i)select departs, from_airport from flights where route regexp '^madison new york$' and no_of_changes<2  arrives<='18:00:00';
+(m)select ename from employee join certified on certified.eid=employee.eid join aircraft on aircraft.aid=certified.aid where cruisingrange>1000 group by employee.eid having count(employee.eid)>1;
+mysql> insert into flights values(12345868,"madison","chicago",600,'00:00:00','02:30:00',500,5006);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into flights values(12345878,"madison","los angeles",2000,'08:00:00','14:00:00',1800,5006);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into flights values(12345879,"madison","los angeles",2000,'00:00:00','06:00:00',1800,5007);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into flights values(12364827,"los angeles","new york",3900,'15:00:00','11:00:00',4500,5008);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into employees values(1001,"john",96000);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into employees values(1002,"smith",126000);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into employees values(1003,"ian",120000);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into employees values(1004,"peter",100000);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into employees values(1005,"michael",76000);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into employees values(1006,"ronaldo",56000);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into employees values(1007,"carlos",36000);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into employees values(1008,"william",16000);
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into employees values(1009,"bruno",86000);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into employees values(1010,"james",116000);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into employees values(1011,"vivian",156000);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into employees values(1012,"colin",56000);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into employees values(1013,"chris",26000);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into employees values(1014,"christopher"11000);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11000)' at line 1
+mysql> insert into employees values(1014,"christopher",11000);
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into employees values(1015,"shane",71000);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into certified values(1008,5008);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into certified values(1013,5007);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into certified values(1002,5001);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into certified values(1001,5001);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into certified values(1003,5002);
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into certified values(1003,5001);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into certified values(1003,5004);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into certified values(1003,5005);
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into certified values(1003,5002);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into certified values(1001,5002);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into certified values(1001,5003);
+Query OK, 1 row affected (0.11 sec)
+
+mysql> insert into certified values(1001,5005);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into certified values(1004,5005);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into certified values(1004,5007);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into certified values(1004,5003);
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into certified values(1011,5003);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into certified values(1011,5006);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into certified values(1011,5008);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into certified values(1012,5007);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into certified values(1012,5006);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into certified values(1012,5008);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into certified values(1002,5002);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into certified values(1008,5008);
+Query OK, 1 row affected (0.06 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(a) select distinct a.a_name from aircraft a,certified c,employees e where a.a_id=c.a_id and c.e_id=e.e_id and not exists (select * from employees e1 where e1.e_id=e.e_id and e1.salary<80000);
+
+(e) select distinct employees.e_name from employees inner join certified on certified.e_id=employees.e_id inner join aircraft on certified.a_id=aircraft.a_id where aircraft.a_name regexp '^boeing';
+(j) select (avg(salary)-(select avg(salary) from employees inner join certified on certified.e_id=employees.e_id)) from employees;
+(b)  select certified.e_id,max(cruising_range) from aircraft inner join certified on certified.a_id=aircraft.a_id inner join employees on employees.e_id=certified.e_id  group by certified.e_id having count(certified.e_id)>3 ;
+(h) select employees.e_name from employees inner join certified on certified.e_id=employees.e_id inner join aircraft on certified.a_id=aircraft.a_id where aircraft.a_name not like 'boeing%' and aircraft.cruising_range >3000 ;
+(k) select  distinct employees.e_name , employees.salary from employees inner join certified on certified.e_id<>employees.e_id where (employees.salary)>(select avg(employees.salary) from employees inner join certified on certified.e_id=employees.e_id);
+(l) select distinct employees.e_name from employees inner join certified on employees.e_id=certified.e_id inner join aircraft on aircraft.a_id=certified.a_id where aircraft.cruising_range>1000;
+(n) select distinct employees.e_name from employees inner join certified on certified.e_id=employees.e_id inner join aircraft on certified.a_id=aircraft.a_id where aircraft.a_name regexp '^boeing' and aircraft.cruising_range>1000;
+(c) select employees.e_name from employees inner join certified on employees.e_id= certified.e_id inner join aircraft on aircraft.a_id=certified.a_id inner join flights on flights.a_id=aircraft.a_id where from_airport="los angeles" and to_airport="honolulu" and (employees.salary*12)<flights.price;
+(f)select flights.a_id from aircraft inner join flights on aircraft.a_id=flights.a_id where flights.distance<aircraft.cruising_range and  from_airport="los angeles" and to_airport="chicago" ;
+(d)select aircraft.a_name,avg(employees.salary) from aircraft join certified on certified.a_id=aircraft.a_id join employees on employees.e_id=certified.e_id where cruising_range>1000 group by aircraft.a_name;
+(g) select aircraft.a_name, employees.salary  from aircraft join certified on (certified.a_id=aircraft.a_id) join employees on (employees.e_id=certified.e_id) where aircraft.cruising_range>1000;
+(i)select departs, from_airport from flights where route regexp '^madison new york$' and no_of_changes<2  arrives<='18:00:00';
+(m)select ename from employee join certified on certified.eid=employee.eid join aircraft on aircraft.aid=certified.aid where cruisingrange>1000 group by employee.eid having count(employee.eid)>1;
+

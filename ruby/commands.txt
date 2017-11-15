@@ -1,0 +1,1090 @@
+beryl@beryl-Inspiron-5542:~$ cd Desktop
+beryl@beryl-Inspiron-5542:~/Desktop$ cd ruby
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ irb
+2.4.1 :001 > array=[]
+ => [] 
+2.4.1 :002 > exit
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby input_array.rb
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby input_array.rb
+5
+4
+8
+3
+2
+9
+5
+48
+75
+34
+136
+
+["5", "4", "8", "3", "2", "9", "5", "48", "75", "34", "136"]
+136
+2
+3
+34
+4
+48
+5
+5
+75
+8
+9
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby input_array.rb
+6
+48
+61
+21
+01
+64
+649
+
+["6", "48", "61", "21", "01", "64", "649"]01
+21
+48
+6
+61
+64
+649
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby input_array.rb
+^Cinput_array.rb:3:in `gets': Interrupt
+	from input_array.rb:3:in `gets'
+	from input_array.rb:3:in `<main>'
+
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+String
+star wars,luke,darth,yoda
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+String
+star wars,luke,darth,yoda
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+String
+star wars,luke,darth,yoda
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+String
+star wars,luke,darth,yoda
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+String
+star wars,luke,darth,yoda
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+String
+star wars,luke,darth,yoda
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+String
+
+defac
+defg
+defgh
+defghi
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+String
+
+defac
+defg
+defgh
+defghi
+method.rb:5:in `<main>': undefined method `join' for "abcdefacabcdefgabcdefghabcdefghi":String (NoMethodError)
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ irb
+2.4.1 :001 > "ojasve".split(///).class
+SyntaxError: (irb):1: syntax error, unexpected ')'
+"ojasve".split(///).class
+                   ^
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+2.4.1 :002 > "ojasve".split("j").class
+ => Array 
+2.4.1 :003 > "ojasve".split("j")
+ => ["o", "asve"] 
+2.4.1 :004 > b="ojasve".split("j")
+ => ["o", "asve"] 
+2.4.1 :005 > b.class
+ => Array 
+2.4.1 :006 > b.join("j")
+ => "ojasve" 
+2.4.1 :007 > b.class
+ => Array 
+2.4.1 :008 > b.join("").class
+ => String 
+2.4.1 :009 > b.join("")
+ => "oasve" 
+2.4.1 :010 > b.join("j")
+ => "ojasve" 
+2.4.1 :011 > b.join("")
+ => "oasve" 
+2.4.1 :012 > b.join("")
+ => "oasve" 
+2.4.1 :013 > irb
+2.4.1 :001 > hash=Hash.new{'ojasve'=>'ruby','PC'=>android,'prashant'=>ios,'aman'=>ruby on rail}
+SyntaxError: (irb#1):1: syntax error, unexpected =>, expecting '}'
+hash=Hash.new{'ojasve'=>'ruby','PC'=>android,'prashant
+                        ^
+(irb#1):1: syntax error, unexpected ',', expecting end-of-input
+ash=Hash.new{'ojasve'=>'ruby','PC'=>android,'prashant'=>ios,
+                              ^
+
+2.4.1 :002 > hash=Hash.new{'ojasve'=>ruby,'PC'=>android,'prashant'=>ios,'aman'=>ruby on rail}
+SyntaxError: (irb#1):2: syntax error, unexpected =>, expecting '}'
+hash=Hash.new{'ojasve'=>ruby,'PC'=>android,'prashant'=
+                        ^
+(irb#1):2: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+Hash.new{'ojasve'=>ruby,'PC'=>android,'prashant'=>ios,'aman'
+                              ^
+(irb#1):2: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+uby,'PC'=>android,'prashant'=>ios,'aman'=>ruby on rail}
+                              ^
+(irb#1):2: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+droid,'prashant'=>ios,'aman'=>ruby on rail}
+                              ^
+(irb#1):2: syntax error, unexpected '}', expecting end-of-input
+nt'=>ios,'aman'=>ruby on rail}
+                              ^
+
+2.4.1 :003 > hash{'ojasve'=>ruby,'PC'=>android,'prashant'=>ios,'aman'=>ruby on rail}
+SyntaxError: (irb#1):3: syntax error, unexpected =>, expecting '}'
+hash{'ojasve'=>ruby,'PC'=>android,'prashant'=
+               ^
+(irb#1):3: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+hash{'ojasve'=>ruby,'PC'=>android,'prashant'=>ios,'aman'
+                          ^
+(irb#1):3: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+uby,'PC'=>android,'prashant'=>ios,'aman'=>ruby on rail}
+                              ^
+(irb#1):3: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+droid,'prashant'=>ios,'aman'=>ruby on rail}
+                              ^
+(irb#1):3: syntax error, unexpected '}', expecting end-of-input
+nt'=>ios,'aman'=>ruby on rail}
+                              ^
+
+2.4.1 :004 > hash{'ojasve'=>ruby,'PC'=>android,'prashant'=>ios,'aman'=>ruby on rail}^C
+2.4.1 :004 > exit
+fatal: No live threads left. Deadlock?
+1 threads, 1 sleeps current:0x8720c08 main thread:0x8720c08
+* #<Thread:0x873eff8 sleep_forever>
+   rb_thread_t:0x8720c08 native:0xb711a700 int:0
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ext/multi-irb.rb:230:in `stop'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ext/multi-irb.rb:230:in `irb'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/cmd/subirb.rb:20:in `execute'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/cmd/nop.rb:20:in `execute'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/extend-command.rb:151:in `irb'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/extend-command.rb:154:in `irb'
+   (irb):13:in `irb_binding'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/workspace.rb:87:in `eval'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/workspace.rb:87:in `evaluate'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/context.rb:381:in `evaluate'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:493:in `block (2 levels) in eval_input'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:627:in `signal_status'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:490:in `block in eval_input'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:246:in `block (2 levels) in each_top_level_statement'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:232:in `loop'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:232:in `block in each_top_level_statement'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:231:in `catch'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:231:in `each_top_level_statement'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:489:in `eval_input'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:430:in `block in run'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:429:in `catch'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:429:in `run'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:385:in `start'
+   /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ext/multi-irb.rb:230:in `stop'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ext/multi-irb.rb:230:in `irb'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/cmd/subirb.rb:20:in `execute'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/cmd/nop.rb:20:in `execute'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/extend-command.rb:151:in `irb'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/extend-command.rb:154:in `irb'
+	from (irb):13:in `irb_binding'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/workspace.rb:87:in `eval'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/workspace.rb:87:in `evaluate'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/context.rb:381:in `evaluate'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:493:in `block (2 levels) in eval_input'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:627:in `signal_status'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:490:in `block in eval_input'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:246:in `block (2 levels) in each_top_level_statement'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:232:in `loop'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:232:in `block in each_top_level_statement'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:231:in `catch'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:231:in `each_top_level_statement'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:489:in `eval_input'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:430:in `block in run'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:429:in `catch'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:429:in `run'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:385:in `start'
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+Maybe IRB bug!
+2.4.1 :014 > exit
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby hash.rb
+1
+2
+3
+4
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ irb
+2.4.1 :001 > technology=Hash.new
+ => {} 
+2.4.1 :002 > technology={'ruby'=>ojasve,'android'=>pc,ios=>prashant,'frontend'=>shantanu}
+NameError: undefined local variable or method `ojasve' for main:Object
+	from (irb):2
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+2.4.1 :003 > technology={'ruby'=>"ojasve",'android'=>"pc",ios=>"prashant",'frontend'=>"shantanu"}
+NameError: undefined local variable or method `ios' for main:Object
+	from (irb):3
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+2.4.1 :004 > technology={'ruby'=>"ojasve",'android'=>"pc",'ios'=>"prashant",'frontend'=>"shantanu"}
+ => {"ruby"=>"ojasve", "android"=>"pc", "ios"=>"prashant", "frontend"=>"shantanu"} 
+2.4.1 :005 > technology[ios]
+NameError: undefined local variable or method `ios' for main:Object
+	from (irb):5
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+2.4.1 :006 > technology['ios']
+ => "prashant" 
+2.4.1 :007 > technology.delete('ios')
+ => "prashant" 
+2.4.1 :008 > technology
+ => {"ruby"=>"ojasve", "android"=>"pc", "frontend"=>"shantanu"} 
+2.4.1 :009 > technology.index('pc')
+(irb):9: warning: Hash#index is deprecated; use Hash#key
+ => "android" 
+2.4.1 :010 > technology.index("pc")
+(irb):10: warning: Hash#index is deprecated; use Hash#key
+ => "android" 
+2.4.1 :011 > technology.key("pc")
+ => "android" 
+2.4.1 :012 > technology.shift
+ => ["ruby", "ojasve"] 
+2.4.1 :013 > technology
+ => {"android"=>"pc", "frontend"=>"shantanu"} 
+2.4.1 :014 > technology.length
+ => 2 
+2.4.1 :015 > technology.has_value?('pc')
+ => true 
+2.4.1 :016 > technology.has_value?('android')
+ => false 
+2.4.1 :017 > technology
+ => {"android"=>"pc", "frontend"=>"shantanu"} 
+2.4.1 :018 > technology.invert
+ => {"pc"=>"android", "shantanu"=>"frontend"} 
+2.4.1 :019 > technology.invert
+ => {"pc"=>"android", "shantanu"=>"frontend"} 
+2.4.1 :020 > technology.invert
+ => {"pc"=>"android", "shantanu"=>"frontend"} 
+2.4.1 :021 > technology.invert
+ => {"pc"=>"android", "shantanu"=>"frontend"} 
+2.4.1 :022 > technology.to_a
+ => [["android", "pc"], ["frontend", "shantanu"]] 
+2.4.1 :023 > technology
+ => {"android"=>"pc", "frontend"=>"shantanu"} 
+2.4.1 :024 > technology.to_h
+ => {"android"=>"pc", "frontend"=>"shantanu"} 
+2.4.1 :025 > array=technology.to_a
+ => [["android", "pc"], ["frontend", "shantanu"]] 
+2.4.1 :026 > array
+ => [["android", "pc"], ["frontend", "shantanu"]] 
+2.4.1 :027 > array.to_h
+ => {"android"=>"pc", "frontend"=>"shantanu"} 
+2.4.1 :028 > array
+ => [["android", "pc"], ["frontend", "shantanu"]] 
+2.4.1 :029 > array.to_h
+ => {"android"=>"pc", "frontend"=>"shantanu"} 
+2.4.1 :030 > array.to_hash
+NoMethodError: undefined method `to_hash' for [["android", "pc"], ["frontend", "shantanu"]]:Array
+Did you mean?  to_h
+	from (irb):30
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+2.4.1 :031 > technology.to_s()
+ => "{\"android\"=>\"pc\", \"frontend\"=>\"shantanu\"}" 
+2.4.1 :032 > technology.values
+ => ["pc", "shantanu"] 
+2.4.1 :033 > technology.values_at(key,android)
+NameError: undefined local variable or method `key' for main:Object
+	from (irb):33
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+2.4.1 :034 > technology.values_at(android,frontend)
+NameError: undefined local variable or method `android' for main:Object
+	from (irb):34
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+2.4.1 :035 > technology.values_at('android','frontend')
+ => ["pc", "shantanu"] 
+2.4.1 :036 > technology.values(pc)
+NameError: undefined local variable or method `pc' for main:Object
+Did you mean?  p
+	from (irb):36
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+2.4.1 :037 > technology.values("pc")
+ArgumentError: wrong number of arguments (given 1, expected 0)
+	from (irb):37:in `values'
+	from (irb):37
+	from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+2.4.1 :038 > technology.value?("pc")
+ => true 
+2.4.1 :039 > exit
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	input_array.rb
+	method.rb
+
+nothing added to commit but untracked files present (use "git add" to track)
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ git add -A
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ git commit -m "ruby programs"
+[master 3bc6e0f] ruby programs
+ 2 files changed, 14 insertions(+)
+ create mode 100644 input_array.rb
+ create mode 100644 method.rb
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ git push -u https://github.com/ojasve123/ruby-day1
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': ojasve123
+Password for 'https://ojasve123@github.com': 
+Counting objects: 26, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (24/24), done.
+Writing objects: 100% (26/26), 3.75 KiB | 0 bytes/s, done.
+Total 26 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/ojasve123/ruby-day1
+   574f2a6..3bc6e0f  master -> master
+Branch master set up to track remote branch master from https://github.com/ojasve123/ruby-day1.
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ^C
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby input_array.rb
+-bash: beryl@beryl-Inspiron-5542:~/Desktop/ruby$: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 1
+1: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 2
+2: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 3
+'3: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 4
+m4: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 5
+n5: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 6
+=6: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 7
+7: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 8
+8: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 9
+9: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+oberyl@beryl-Inspiron-5542:~/Desktop/ruby$ 1
+1: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 2
+2: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 3
+3: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 4
+4: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 5
+5: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 6
+6: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 7
+7: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 8
+8: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 9
+ 9: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+ beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 1
+1: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 2
+  2: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 3
+ 3: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 4
+ 4: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 5
+5: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 6
+ 6: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 7
+7: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 8
+ 8: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 9
+9: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby input_array.rb
+-bash: beryl@beryl-Inspiron-5542:~/Desktop/ruby$: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 5
+5: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 4
+s4: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 8
+'8: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 3
+3: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 2
+n2: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 9
+9: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 5
+5: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 48
+y48: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 75
+n75: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 34
+a34: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 136
+136: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ["5", "4", "8", "3", "2", "9", "5", "48", "75", "34", "136"]
+[5,: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 136
+136: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 2
+2: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 3
+ 3: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 34
+34: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 4
+4: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 48
+48: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 5
+c5: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 5
+5: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 75
+ren75: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 8
+8: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 9
+9: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby input_array.rb
+-bash: beryl@beryl-Inspiron-5542:~/Desktop/ruby$: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 6
+6: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 48
+48: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 61
+r61: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 21
+t21: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 01
+01: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 64
+64: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 649
+x649: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+8beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ["6", "48", "61", "21, "01", "64", "649"]01
+[6,: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 21
+21: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 48
+48: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 6
+6: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 61
+61: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 64
+64: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 649
+-649: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby input_array.rb
+-bash: beryl@beryl-Inspiron-5542:~/Desktop/ruby$: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ^Cinput_array.rb:3:in `gets': Interrupt
+-bash: :s^Cinput_array.rb:3:in `gets': Interrupt: substitution failed
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ from input_array.rb:3:in `gets'
+> from input_array.rb:3:in `<main>'
+> 
+r> beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+> String
+> star wars,luke,darth,yoda
+y> beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+> String
+> star wars,luke,darth,yoda
+> beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+> String
+> star wars,luke,darth,yoda
+> beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+> String
+> star wars,luke,darth,yoda
+> beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+> String
+> star wars,luke,darth,yoda
+> beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+> String
+> star wars,luke,darth,yoda
+> beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+> String
+> 
+> defac
+> defg
+> defgh
+> defghi
+> beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby method.rb
+> String
+> 
+> defac
+> defg
+> defgh
+> defghi
+> method.rb:5:in `<main>': undefined method `join' for "abcdefacabcdefgabcdefghabcdefghi":String (NoMethodError)
+> beryl@beryl-Inspiron-5542:~/Desktop/ruby$ irb
+> 2.4.1 :001 > "ojasve".split(///).class
+> SyntaxError: (irb):1: syntax error, unexpected ')'
+> "ojasve".split(///).class
+>                    ^
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+> 2.4.1 :002 > "ojasve".split("j").class
+>  => Array 
+> 2.4.1 :003 > "ojasve".split("j")
+>  => ["o", "asve"] 
+> 2.4.1 :004 > b="ojasve".split("j")
+>  => ["o", "asve"] 
+> 2.4.1 :005 > b.class
+>  => Array 
+> 2.4.1 :006 > b.join("j")
+>  => "ojasve" 
+> 2.4.1 :007 > b.class
+>  => Array 
+> 2.4.1 :008 > b.join("").class
+>  => String 
+> 2.4.1 :009 > b.join("")
+>  => "oasve" 
+> 2.4.1 :010 > b.join("j")
+>  => "ojasve" 
+> 2.4.1 :011 > b.join("")
+/.>  => "oasve" 
+> 2.4.1 :012 > b.join("")
+>  => "oasve" 
+0:in> 2.4.1 :013 > irb
+> 2.4.1 :001 > hash=Hash.new{'ojasve'=>'ruby','PC'=>android,'prashant'=>ios,'aman'=>ruby on rail}
+> SyntaxError: (irb#1):1: syntax error, unexpected =>, expecting '}'
+> hash=Hash.new{'ojasve'=>'ruby','PC'=>android,'prashant
+-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 3: syntax error: unexpected end of file
+-bash: command substitution: line 4: syntax error near unexpected token `)'
+-bash: command substitution: line 4: `SyntaxError: (irb):1: syntax error, unexpected ')''
+-bash: main: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$                         ^
+vm/ru^: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ (irb#1):1: syntax error, unexpected ',', expecting end-of-input
+-bash: syntax error near unexpected token `:1:'
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ash=Hash.new{'ojasve'=>'ruby','PC'=>android,'prashant'=>ios,
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$                               ^
+^: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 2.4.1 :002 > hash=Hash.new{'ojasve'=>ruby,'PC'=>android,'prashant'=>ios,'aman'=>ruby on rail}
+2.4.1: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ SyntaxError: (irb#1):2: syntax error, unexpected =>, expecting '}'
+-bash: syntax error near unexpected token `irb#1'
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ hash=Hash.new{'ojasve'=>ruby,'PC'=>android,'prashant'=
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$                         ^
+^: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ (irb#1):2: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+-bash: syntax error near unexpected token `:2:'
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ Hash.new{'ojasve'=>ruby,'PC'=>android,'prashant'=>ios,'aman'
+Hash.new{ojasve=: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$                               ^
+^: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ (irb#1):2: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+-bash: syntax error near unexpected token `:2:'
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ uby,'PC'=>android,'prashant'=>ios,'aman'=>ruby on rail}
+uby,PC=: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$                               ^
+^: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ (irb#1):2: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+-bash: syntax error near unexpected token `:2:'
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ droid,'prashant'=>ios,'aman'=>ruby on rail}
+droid,prashant=: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$                               ^
+^: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ (irb#1):2: syntax error, unexpected '}', expecting end-of-input
+-bash: syntax error near unexpected token `:2:'
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ nt'=>ios,'aman'=>ruby on rail}
+>                               ^
+> 
+r> 2.4.1 :003 > hash{'ojasve'=>ruby,'PC'=>android,'prashant'=>io,'aman'=>ruby on rail}
+> SyntaxError: (irb#1):3: syntax error, unexpected =>, expecting '}'
+> hash{'ojasve'=>ruby,'PC'=>android,'prashant'=
+>                ^
+> (irb#1):3: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+> hash{'ojasve'=>ruby,'PC'=>android,'prashant'=>ios,'aman'
+>                           ^
+> (irb#1):3: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+> uby,'PC'=>android,'prashant'=>ios,'aman'=>ruby on rail}
+>                               ^
+> (irb#1):3: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+> droid,'prashant'=>ios,'aman'=>ruby on rail}
+>                               ^
+> (irb#1):3: syntax error, unexpected '}', expecting end-of-input
+> nt'=>ios,'aman'=>ruby on rail}
+nt=>ios,aman=>ruby on rail}
+                              ^
+
+2.4.1 :003 > hash{ojasve=>ruby,PC=>android,prashant=>ios,aman=>ruby on rail}
+SyntaxError: (irb#1):3: syntax error, unexpected =>, expecting }
+hash{ojasve=>ruby,PC=>android,prashant=
+               ^
+(irb#1):3: syntax error, unexpected =>, expecting &. or :: or [ or .
+hash{ojasve=>ruby,PC=>android,prashant=>ios,aman
+                          ^
+(irb#1):3: syntax error, unexpected =>, expecting &. or :: or [ or .
+uby,PC=>android,prashant=>ios,aman=>ruby on rail}
+                              ^
+(irb#1):3: syntax error, unexpected =>, expecting &. or :: or [ or .
+droid,prashant=>ios,aman=>ruby on rail}
+                              ^
+(irb#1):3: syntax error, unexpected }, expecting end-of-input
+nt=: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$                               ^
+^: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+.beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 2.4.1 :004 > hash{'ojsve'=>ruby,'PC'=>android,'prashant'=>ios,'aman'=>ruby on rail}^C
+2.4.1: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 2.4.1 :004 > exit
+2.4.1: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ fatal: No live threads left. Deadlock?
+fatal:: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 1 threads, 1 sleeps current:0x8720c08 main thread:0x8720c08
+1: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ * #<Thread:0x873eff8 sleep_forever>
+age.rb: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$    rb_thread_t:0x8720c08 native:0xb711a700 int:0
+rb_thread_t:0x8720c08: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ext/multi-irb.rb:230:in `stop'
+>    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ext/multi-irb.rb:230:in `irb'
+>    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/cmd/subirb.rb:20:in `execute'
+-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 3: syntax error: unexpected end of file
+-bash: /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ext/multi-irb.rb:230:in: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/cmd/nop.rb:20:in `execute'
+>    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/extend-command.rb:151:in `irb'
+>    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/extend-command.rb:154:in `irb'
+-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 3: syntax error: unexpected end of file
+-bash: /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/cmd/nop.rb:20:in: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$    (irb):13:in `irb_binding'
+-bash: syntax error near unexpected token `:13:in'
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/workspace.rb:87:in `eval'
+>    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/workspace.rb:87:in `evaluate'
+>    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/context.rb:381:in `evaluate'
+-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 3: syntax error: unexpected end of file
+-bash: /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/workspace.rb:87:in: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:493:in `block (2 levels) in eval_input'
+>    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:627:in `signal_status'
+>    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:490:in `block in eval_input'
+-bash: command substitution: line 1: syntax error near unexpected token `2'
+-bash: command substitution: line 1: `block (2 levels) in eval_input''
+-bash: /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:493:in: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:246:in `block (2 levels) in each_top_level_statement'
+>    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:232:in `loop'
+>    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:232:in `block in each_top_level_statement'
+-bash: command substitution: line 1: syntax error near unexpected token `2'
+-bash: command substitution: line 1: `block (2 levels) in each_top_level_statement''
+-bash: /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:246:in: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:231:in `catch'
+>    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:231:in `each_top_level_statement'
+>    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:489:in `eval_input'
+-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 3: syntax error: unexpected end of file
+-bash: /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:231:in: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:430:in `block in run'
+>    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:429:in `catch'
+>    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:429:in `run'
+=-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 3: syntax error: unexpected end of file
+-bash: /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:430:in: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$    /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:385:in `start'
+>    /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+> 
+t> from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ex/multi-irb.rb:230:in `stop'
+-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 3: syntax error: unexpected end of file
+-bash: main: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ext/multi-irb.rb:230:in `irb'
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/cmd/subirb.rb:20:in `execute'
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/cmd/nop.rb:20:in `execute'
+"=>"pc", "frontend"=>"s-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 3: syntax error: unexpected end of file
+from: can't read /var/mail//home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ext/multi-irb.rb:230:in
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/extend-command.rb:151:in `irb'
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/extend-command.rb:154:in `irb'
+> from (irb):13:in `irb_binding'
+-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 3: syntax error: unexpected end of file
+from: can't read /var/mail//home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/extend-command.rb:151:in
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/workspace.rb:87:in `eval'
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/workspace.rb:87:in `evaluate'
+0 > from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ctext.rb:381:in `evaluate'
+-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 3: syntax error: unexpected end of file
+from: can't read /var/mail//home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/workspace.rb:87:in
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:493:in `block (2 levels) in eval_input'
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:627:in `signal_status'
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:490:in `block in eval_input'
+-bash: command substitution: line 1: syntax error near unexpected token `2'
+-bash: command substitution: line 1: `block (2 levels) in eval_input''
+from: can't read /var/mail//home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:493:in
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:246:in `block (2 levels) in each_top_level_statement'
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:232:in `loop'
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:232:in `block in each_top_level_statement'
+-bash: command substitution: line 1: syntax error near unexpected token `2'
+-bash: command substitution: line 1: `block (2 levels) in each_top_level_statement''
+from: can't read /var/mail//home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:246:in
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:231:in `catch'
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:231:in `each_top_level_statement'
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:489:in `eval_input'
+-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 3: syntax error: unexpected end of file
+from: can't read /var/mail//home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb/ruby-lex.rb:231:in
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:430:in `block in run'
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:429:in `catch'
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:429:in `run'
+-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 3: syntax error: unexpected end of file
+from: can't read /var/mail//home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:430:in
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ from /home/beryl/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/irb.rb:385:in `start'
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+> Maybe IRB bug!
+> 2.4.1 :014 > exit
+> beryl@beryl-Inspiron-5542:~/Desktop/ruby$ ruby hash.rb
+> 1
+> 2
+> 3
+> 4
+> beryl@beryl-Inspiron-5542:~/Desktop/ruby$ irb
+u> 2.4.1 :001 > technology=Hash.new
+>  => {} 
+> 2.4.1 :002 > technology={'ruby'=>ojasve,'android'=>pc,ios=>prashant,'frontend'=>shantanu}
+l> NameError: undefined local variable or method `ojasve' for man:Object
+p-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 3: syntax error: unexpected end of file
+-bash: main: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ from (irb):2
+-bash: syntax error near unexpected token `irb'
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+> 2.4.1 :003 > technology={'ruby'=>"ojasve",'android'=>"pc",ios=>"prashant",'frontend'=>"shantanu"}
+> NameError: undefined local variable or method `ios' for main:Object
+> from (irb):3
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+ay1
+warning:-bash: command substitution: line 2: unexpected EOF while looking for matching `''
+-bash: command substitution: line 4: syntax error: unexpected end of file
+from: can't read /var/mail//home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 2.4.1 :004 > technology={'ruby'=>"ojasve",'android'=>"pc",'ios'=>"prashant",'frontend'=>"shantanu"}
+2.4.1: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$  => {"ruby"=>"ojasve", "android"=>"pc", "ios"=>"prashant", "frontend"=>"shantanu"} 
+=: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 2.4.1 :005 > technology[ios]
+2.4.1: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ NameError: undefined local variable or method `ios' for main:Object
+> from (irb):5
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+> 2.4.1 :006 > technology['ios']
+ >  => "prashant" 
+> 2.4.1 :007 > technology.delete('ios')
+>  => "prashant" 
+,> 2.4.1 :008 > technology
+>  => {"ruby"=>"ojasve", "android"=>"pc", "frontend"=>"shantanu"} 
+> 2.4.1 :009 > technology.index('pc')
+> (irb):9: warning: Hash#index is deprecated; use Hash#key
+>  => "android" 
+c> 2.4.1 :010 > technology.index("pc")
+> (irb):10: warning: Hash#index is deprecated; use Hash#key
+>  => "android" 
+1> 2.4.1 :011 > technology.key("pc")
+>  => "android" 
+> 2.4.1 :012 > technology.shift
+>  => ["ruby", "ojasve"] 
+> 2.4.1 :013 > technology
+>  => {"android"=>"pc", "frontend"=>"shantanu"} 
+> 2.4.1 :014 > technology.length
+>  => 2 
+> 2.4.1 :015 > technology.has_value?('pc')
+>  => true 
+> 2.4.1 :016 > technology.has_value?('android')
+>  => false 
+> 2.4.1 :017 > technology
+>  => {"android"=>"pc", "frontend"=>"shantanu"} 
+> 2.4.1 :018 > technology.invert
+>  => {"pc"=>"android", "shantanu"=>"frontend"} 
+> 2.4.1 :019 > technology.invert
+>  => {"pc"=>"android", "shantanu"=>"frontend"} 
+> 2.4.1 :020 > technology.invert
+h>  => {"pc"=>"android", "shantanu"=>"frontend"} 
+> 2.4.1 :021 > technology.invert
+b>  => {"pc"=>"android", "shantanu"=>"frontend"} 
+> 2.4.1 :022 > technology.to_a
+>  => [["android", "pc"], ["frontend", "shantanu"]] 
+> 2.4.1 :023 > technology
+>  => {"android"=>"pc", "frontend"=>"shantanu"} 
+> 2.4.1 :024 > technology.to_h
+>  => {"android"=>"pc", "frontend"=>"shantanu"} 
+> 2.4.1 :025 > array=technology.to_a
+>  => [["android", "pc"], ["frontend", "shantanu"]] 
+> 2.4.1 :026 > array
+>  => [["android", "pc"], ["frontend", "shantanu"]] 
+> 2.4.1 :027 > array.to_h
+>  => {"android"=>"pc", "frontend"=>"shantanu"} 
+> 2.4.1 :028 > array
+>  => [["android", "pc"], ["frontend", "shantanu"]] 
+> 2.4.1 :029 > array.to_h
+>  => {"android"=>"pc", "frontend"=>"shantanu"} 
+> 2.4.1 :030 > array.to_hash
+> NoMethodError: undefined method `to_hash' for [["android", "pc"], ["frontend", "shantanu"]]:Array
+-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 4: syntax error: unexpected end of file
+-bash: main: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ Did you mean?  to_h
+No command 'Did' found, did you mean:
+ Command 'gid' from package 'id-utils' (universe)
+ Command 'lid' from package 'id-utils' (universe)
+ Command 'sid' from package 'tendra' (universe)
+ Command 'eid' from package 'id-utils' (universe)
+ Command 'fid' from package 'id-utils' (universe)
+ Command 'kid' from package 'python-kid' (universe)
+ Command 'id' from package 'coreutils' (main)
+ Command 'aid' from package 'id-utils' (universe)
+Did: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ from (irb):30
+-bash: syntax error near unexpected token `irb'
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+> 2.4.1 :031 > technology.to_s()
+>  => "{\"android\"=>\"pc\", \"frontend\"=>\"shantanu\"}" 
+> 2.4.1 :032 > technology.values
+>  => ["pc", "shantanu"] 
+> 2.4.1 :033 > technology.values_at(key,android)
+> NameError: undefined local variable or method `key' for main:Object
+> from (irb):33
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 8: syntax error: unexpected end of file
+from: can't read /var/mail//home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 2.4.1 :034 > technology.values_at(android,frontend)
+-bash: syntax error near unexpected token `('
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ NameError: undefined local variable or method `android' for main:Object
+> from (irb):34
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+> 2.4.1 :035 > technology.values_at('android','frontend')
+>  => ["pc", "shantanu"] 
+> 2.4.1 :036 > technology.values(pc)
+> NameError: undefined local variable or method `pc' for main:Object
+-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 4: syntax error: unexpected end of file
+-bash: main: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ Did you mean?  p
+No command 'Did' found, did you mean:
+ Command 'id' from package 'coreutils' (main)
+ Command 'kid' from package 'python-kid' (universe)
+ Command 'eid' from package 'id-utils' (universe)
+ Command 'gid' from package 'id-utils' (universe)
+ Command 'aid' from package 'id-utils' (universe)
+ Command 'fid' from package 'id-utils' (universe)
+ Command 'lid' from package 'id-utils' (universe)
+ Command 'sid' from package 'tendra' (universe)
+Did: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ from (irb):36
+-bash: syntax error near unexpected token `irb'
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+> 2.4.1 :037 > technology.values("pc")
+> ArgumentError: wrong number of arguments (given 1, expected 0)
+> from (irb):37:in `values'
+> from (irb):37
+> from /home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+-bash: command substitution: line 1: unexpected EOF while looking for matching `''
+-bash: command substitution: line 5: syntax error: unexpected end of file
+from: can't read /var/mail//home/beryl/.rvm/rubies/ruby-2.4.1/bin/irb:11:in
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 2.4.1 :038 > technology.value?("pc")
+2.4.1: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$  => true 
+=: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 2.4.1 :039 > exit
+2.4.1: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ beryl@beryl-Inspiron-5542:~/Desktop/ruby$ git status
+-bash: beryl@beryl-Inspiron-5542:~/Desktop/ruby$: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ On branch master
+On: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ Your branch is ahead of 'origin/master' by 2 commits.
+Your: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$   (use "git push" to publish your local commits)
+No command 'use' found, did you mean:
+ Command 'nse' from package 'ns2' (universe)
+ Command 'muse' from package 'muse' (universe)
+ Command 'fuse' from package 'fuse-emulator-gtk' (universe)
+ Command 'fuse' from package 'fuse-emulator-sdl' (universe)
+use: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ Untracked files:
+Untracked: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$   (use "git add <file>..." to include in what will be committed)
+No command 'use' found, did you mean:
+ Command 'muse' from package 'muse' (universe)
+ Command 'nse' from package 'ns2' (universe)
+ Command 'fuse' from package 'fuse-emulator-gtk' (universe)
+ Command 'fuse' from package 'fuse-emulator-sdl' (universe)
+use: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ input_array.rb
+input_array.rb: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ method.rb
+method.rb: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ nothing added to commit but untracked files present (use "git add" to track)
+-bash: syntax error near unexpected token `('
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ beryl@beryl-Inspiron-5542:~/Desktop/ruby$ git add -A
+-bash: beryl@beryl-Inspiron-5542:~/Desktop/ruby$: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ beryl@beryl-Inspiron-5542:~/Desktop/ruby$ git commit -m "ruby programs"
+-bash: beryl@beryl-Inspiron-5542:~/Desktop/ruby$: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ [master 3bc6e0f] ruby programs
+[master: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$  2 files changed, 14 insertions(+)
+-bash: syntax error near unexpected token `('
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$  create mode 100644 input_array.rb
+No command 'create' found, did you mean:
+ Command 'pcreate' from package 'python-pyramid' (universe)
+ Command 'pcreate' from package 'pbuilder-scripts' (universe)
+create: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$  create mode 100644 method.rb
+No command 'create' found, did you mean:
+ Command 'pcreate' from package 'pbuilder-scripts' (universe)
+ Command 'pcreate' from package 'python-pyramid' (universe)
+create: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ beryl@beryl-Inspiron-5542:~/Desktop/ruby$ git push -u https://github.com/ojasve123/ruby-day1
+-bash: beryl@beryl-Inspiron-5542:~/Desktop/ruby$: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ warning: push.default is unset; its implicit value has changed in
+warning:: command not found
+No command 'its' found, did you mean:
+ Command 'ips' from package 'ips' (universe)
+ Command 'fts' from package 'fts' (universe)
+ Command 'bts' from package 'devscripts' (main)
+ Command 'hts' from package 'httptunnel' (universe)
+ Command 'ils' from package 'sleuthkit' (universe)
+ Command 'pts' from package 'openafs-client' (universe)
+ Command 'ots' from package 'libots0' (universe)
+ Command 'ts' from package 'moreutils' (universe)
+its: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ Git 2.0 from 'matching' to 'simple'. To squelch this message
+No command 'Git' found, did you mean:
+ Command 'vit' from package 'vit' (universe)
+ Command 'git' from package 'git' (main)
+ Command 'wit' from package 'wit' (universe)
+ Command 'nit' from package 'python-nevow' (universe)
+Git: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ and maintain the traditional behavior, use:
+The program 'and' is currently not installed. You can install it by typing:
+sudo apt install and
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$   git config --global push.default matching
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ To squelch this message and adopt the new behavior now, use:
+To: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$   git config --global push.default simple
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ When push.default is set to 'matching', git will push local branches
+No command 'When' found, did you mean:
+ Command 'when' from package 'when' (universe)
+When: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ to the remote branches that already exist with the same name.
+to: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ Since Git 2.0, Git defaults to the more conservative 'simple'
+No command 'Since' found, did you mean:
+ Command 'since' from package 'since' (universe)
+Since: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ behavior, which only pushes the current branch to the corresponding
+behavior,: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ remote branch that 'git pull' uses to update the current branch.
+remote: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ See 'git help config' and search for 'push.default' for further information.
+No command 'See' found, did you mean:
+ Command 'tee' from package 'coreutils' (main)
+ Command 'pee' from package 'moreutils' (universe)
+ Command 'ree' from package 'ree' (universe)
+ Command 'see' from package 'mime-support' (main)
+See: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ (the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+> 'current' instead of 'simple' if you sometimes use older versions of Git)
+The program 'the' is currently not installed. You can install it by typing:
+sudo apt install the
+current: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ Username for 'https://github.com': ojasve123
+Username: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ Password for 'https://ojasve123@github.com': 
+No command 'Password' found, did you mean:
+ Command 'assword' from package 'assword' (universe)
+Password: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ Counting objects: 26, done.
+Counting: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ Delta compression using up to 4 threads.
+No command 'Delta' found, did you mean:
+ Command 'delta' from package 'swap-cwm' (universe)
+Delta: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ Compressing objects: 100% (24/24), done.
+-bash: syntax error near unexpected token `('
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ Writing objects: 100% (26/26), 3.75 KiB | 0 bytes/s, done.
+-bash: syntax error near unexpected token `('
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ Total 26 (delta 5), reused 0 (delta 0)
+-bash: syntax error near unexpected token `('
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ remote: Resolving deltas: 100% (5/5), done.
+-bash: syntax error near unexpected token `('
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ To https://github.com/ojasve123/ruby-day1
+To: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$    574f2a6..3bc6e0f  master -> master
+574f2a6..3bc6e0f: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ Branch master set up to track remote branch master from https://github.com/ojasve123/ruby-day1.
+No command 'Branch' found, did you mean:
+ Command 'branch' from package 'rheolef' (universe)
+Branch: command not found
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+-bash: beryl@beryl-Inspiron-5542:~/Desktop/ruby$: No such file or directory
+beryl@beryl-Inspiron-5542:~/Desktop/ruby$ 
+
