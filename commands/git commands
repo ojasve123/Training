@@ -1,0 +1,17 @@
+Login1. git config --global user.name "User name"
+2. git config --global user.email "email id"3. git init PCrepo               //make Repository
+4. cd PCrepo                    // move to folder
+5. touch comp.html         //make files
+6. git status                    // Check Status
+7. git add comp.html      // Add file to Staging area
+8. git commit -m "First commit" comp.html     // Commit a file
+9. git push origin master       // Upload file to Remote
+10. git clone url                     // Cloning a Remote Repository
+11. git branch file_name     // create new branch
+12. git checkout branch_name //switch to branch
+--------------
+Delete File Local and Remote File13. rm file_name // Delete file
+14. git commit -m "Deleted file" file_name //Delete Remote file
+
+
+

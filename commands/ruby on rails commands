@@ -1,0 +1,6 @@
+1.mysql -u root -p
+2.rvm list #to show the all installed version of ruby
+3. rvm use ruby_version to use
+4.gem install rails   #install rails through rvm
+5.rails new project_name -d mysql    #to create new project in rails with mysql database
+6.rake db:create
