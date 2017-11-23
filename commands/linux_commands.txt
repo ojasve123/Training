@@ -1,0 +1,123 @@
+ls :to list all the subdirectories and files
+ls -R :to list all the files in the directories and in sub-directories
+ls -al : gives detailed information of the files
+cat>file_name :used to create new file in command prompt
+we can edit this file immediately after running the above command
+ctrl-d to exit the file edit to the pwd.
+cat file_name :to see the contents of a file
+sudo :usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user]
+            [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p
+            prompt] [-u user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p
+            prompt] [-u user] file ...
+
+whoami : gives the system-name
+cp : copy files or directory to another file or directory
+rmdir : remove a directory 
+
+
+
+
+
+ ls
+	
+
+Lists all files and directories in the present working directory
+
+ls - R
+	
+
+Lists files in sub-directories as well
+
+ls - a
+	
+
+Lists hidden files as well
+
+ls - al
+	
+
+Lists files and directories with detailed information like permissions, size, owner, etc.
+
+cat > filename
+	
+
+Creates a new file
+
+cat filename
+	
+
+Displays the file content
+
+cat file file2 > file3
+	
+
+Joins two files (file1, file2) and stores the output in a new file (file3)
+
+mv  file "new file path"
+	
+
+Moves the files to the new location
+
+mv filename new_file_name
+	
+
+Renames the file to a new filename
+
+sudo
+	
+
+Allows regular users to run programs with the security privileges of the superuser or root
+
+rm
+	
+
+Deletes a file
+
+man
+	
+
+Gives help information on a command
+
+history
+	
+
+Gives a list of all past commands typed in the current terminal session
+
+clear
+	
+
+Clears the terminal
+
+mkdir
+	
+
+Creates a new directory in the present working directory
+
+mkdir
+	
+
+Create a new directory at the specified path
+
+rmdir
+	
+
+Deletes a directory
+
+mv
+	
+
+Renames a directory
+pr -x 	Divides the file into x columns
+pr -h 	Assigns a header to the file
+pr -n 	Denotes the file with Line Numbers
+lp -nc
+lpr c   	Prints "c" copies of the File
+lp -d lp -P 	Specifies name of the printer
+apt-get 	Command used to install and update packages
+mail -s 'subject' -c 'cc-address' -b 'bcc-address' 'to-address' 	Command to send email
+Mail -s "Subject" to-address < Filename 	Command to send email with attachment
+
