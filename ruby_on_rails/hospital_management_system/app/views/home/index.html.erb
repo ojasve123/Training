@@ -1,21 +1,83 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+<style>
+.head{
+	height :100px;
+	background-color: WhiteSmoke;
+	color:Dodgerblue;
+
+}
+.body{
+    background-color:Snow;
+
+}
+
+
+</style>
 <body>
+<div class="head">
+	<%= image_tag("berylimage.png" , width:"80" ,height:"100", align:"left")%>
+<h1 align="Center";>HOSPITAL MANAGEMENT SYSTEM </h1>
 
-<h1  style="color:Dodgerblue;">HOSPITAL MANAGEMENT SYSTEM </h1>
+</div>
+<div color:"Red",class="table" > 
+  <style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color:Tomato;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+table#t01 {
+    width: 100%;    
+    background-color: #f1f1c1;
+}
+  </style>
+   <table align="center">
+  <tr>
+    <th>Doctor</th>
+    <th>Department</th>
+    <th>Patient</th>
+    <th>Schedule</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table> 
+</div>
 <p></p>
-
+<div class ="body">
  <form action="">
   Doctor name:<br>
-  <input type="text" name="doctor-name" value=""><br>
+  <input type="text" name="doctor_name" value=""><br>
   patient name:<br>
-  <input type="text" name="patient-name" value=""><br>
+  <input type="text" name="patient_name" value=""><br>
   Department name<br>
-  <input type="text" name="department" value=""><br>
+  <input type="text" name="department_name" value=""><br>
   schedule-appointment<br>
-  <input type="text" name="shedule-appointment" value=""><br><br>
+  <input type="text" name="shedule" value=""><br><br>
   <input type="submit" value="Submit">
-</form> 
+ </form> 
+
+</div>
  <!--<button type="button"></button> -->
 </body>
 </html> 
