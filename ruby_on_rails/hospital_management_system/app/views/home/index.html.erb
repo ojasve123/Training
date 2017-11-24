@@ -7,9 +7,21 @@
 	color:Dodgerblue;
 
 }
+.record{
+	height :450px;
+	background-color: Seashell;
+	color:SkyBlue;
+}
 .body{
     background-color:Snow;
 
+}
+.list, .list2{
+	display: inline-block;
+}
+.list{
+	vertical-align: top;
+	padding-left: 100px;
 }
 
 
@@ -20,12 +32,11 @@
 <h1 align="Center";>HOSPITAL MANAGEMENT SYSTEM </h1>
 
 </div>
-<div color:"Red",class="table" > 
+<div class="record" > 
   <style>
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-    color:Tomato;
 }
 th, td {
     padding: 15px;
@@ -36,7 +47,7 @@ table#t01 {
     background-color: #f1f1c1;
 }
   </style>
-   <table align="center">
+   <table align="left">
   <tr>
     <th>Doctor</th>
     <th>Department</th>
@@ -44,28 +55,59 @@ table#t01 {
     <th>Schedule</th>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>vinay</td>
+    <td>cardiology</td>
+    <td>ram</td>
+    <td>2017-11-25 01:00:00</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>nikhil</td>
+    <td>neuorolgy</td>
+    <td>keshav</td>
+    <td>2017-11-24 13:30:00</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>naman</td>
+    <td>general physician</td>
+    <td>madhav</td>
+    <td> 2017-11-24 14:30:00</td>
+  </tr>
+  <tr>
+    <td>manu</td>
+    <td>pschology</td>
+    <td>vikas</td>
+    <td>2017-11-24 15:30:00</td>
+  </tr>
+  <tr>
+    <td>manan</td>
+    <td>cardiology</td>
+    <td>vinod</td>
+    <td>2017-11-24 16:30:00</td>
+  </tr>
+  <tr>
+    <td>aman</td>
+    <td>neurology</td>
+    <td>ram</td>
+    <td>2017-11-24 17:30:00</td>
+  </tr>
+  <tr>
+    <td>mahendra</td>
+    <td>general physician</td>
+    <td>keshav</td>
+    <td>2017-11-24 17:30:00 </td>
+  </tr>
+  <tr>
+    <td>lokesh</td>
+    <td>psychology</td>
+    <td>madhav</td>
+    <td>2017-11-23 16:00:00 </td>
   </tr>
 </table> 
 </div>
 <p></p>
 <div class ="body">
- <form action="">
+	<div class="list2">
+ <form action="" method="get">
   Doctor name:<br>
   <input type="text" name="doctor_name" value=""><br>
   patient name:<br>
@@ -75,9 +117,23 @@ table#t01 {
   schedule-appointment<br>
   <input type="text" name="shedule" value=""><br><br>
   <input type="submit" value="Submit">
- </form> 
+ </form>
+ </div>
+ <div class ="list"> 
+<ol type="I">
+ 	<li>cardiology</li>
+ 	<li>neurology</li>
+ 	<li>general physician</li>
+ 	<li>psycholgy</li>
+ </ol>
+ <dl>
+ 	<dt>fever</dt>
+ 	<dd>A state in which the temprature of body rises resulting in weakness.</dd>
 
+ </dl>
+</div>
 </div>
  <!--<button type="button"></button> -->
+ 
 </body>
 </html> 
