@@ -8,7 +8,7 @@
 
 }
 .record{
-	height :450px;
+	height :750px;
 	background-color: Seashell;
 	color:SkyBlue;
 }
@@ -27,6 +27,9 @@
 
 </style>
 <body>
+	<a href="http://google.com" target="_blank">Google </a>
+	<%= link_to "Google", "http://google.com", target: "_blank" %>
+
 <div class="head">
 	<%= image_tag("berylimage.png" , width:"80" ,height:"100", align:"left")%>
 <h1 align="Center";>HOSPITAL MANAGEMENT SYSTEM </h1>
@@ -45,61 +48,25 @@ th, td {
   </style>
 
    <table align="left">
-  <tr>
-    <th>Doctor</th>
-    <th>Department</th>
-    <th>Patient</th>
-    <th>Schedule</th>
-  </tr>
-  <tr>
-    <td>vinay</td>
-    <td>cardiology</td>
-    <td>ram</td>
-    <td>2017-11-25 01:00:00</td>
-  </tr>
-  <tr>
-    <td>nikhil</td>
-    <td>neuorolgy</td>
-    <td>keshav</td>
-    <td>2017-11-24 13:30:00</td>
-  </tr>
-  <tr>
-    <td>naman</td>
-    <td>general physician</td>
-    <td>madhav</td>
-    <td> 2017-11-24 14:30:00</td>
-  </tr>
-  <tr>
-    <td>manu</td>
-    <td>pschology</td>
-    <td>vikas</td>
-    <td>2017-11-24 15:30:00</td>
-  </tr>
-  <tr>
-    <td>manan</td>
-    <td>cardiology</td>
-    <td>vinod</td>
-    <td>2017-11-24 16:30:00</td>
-  </tr>
-  <tr>
-    <td>aman</td>
-    <td>neurology</td>
-    <td>ram</td>
-    <td>2017-11-24 17:30:00</td>
-  </tr>
-  <tr>
-    <td>mahendra</td>
-    <td>general physician</td>
-    <td>keshav</td>
-    <td>2017-11-24 17:30:00 </td>
-  </tr>
-  <tr>
-    <td>lokesh</td>
-    <td>psychology</td>
-    <td>madhav</td>
-    <td>2017-11-23 16:00:00 </td>
-  </tr>
-</table> 
+   	<tr>
+      <th>Doctor</th>
+      <th>Department</th>
+      <th>Patient</th>
+      <th>Schedule</th>
+    </tr>
+   	<% @appointments.each do |appointment| %>
+   	  <tr>
+        <td><%=  link_to appointment.doctor.doctor_name,doctor_details_path(id: appointment.doctor.id) %> </td>
+        <td><%= appointment.doctor.department.department_name %></td>
+        <td><%= link_to appointment.patient.patient_name, patient_details_path(id: appointment.patient.id ) %></td>
+        <td><%= appointment.schedule %></td>
+      </tr>
+
+
+   	<% end %>
+  
+  
+    </table> 
 </div>
 <p><a href="https://www.google.com">Visit google.com!</a> </p>
 <div class ="body">
@@ -115,7 +82,7 @@ th, td {
     <option value="manan">manan</option>
     <option value="">mahendra</option>
      <option value="">lokesh</option>
-     
+
   </select>
  <!-- <input type="text" name="doctor_name" value="">--><br>
   patient name:<br>

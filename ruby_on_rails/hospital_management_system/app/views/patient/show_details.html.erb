@@ -1,0 +1,9 @@
+hello
+Name: <%= @patient.patient_name %><br />
+
+<% @patient.appointments.each do |patient_apointment| %>
+  <%= patient_apointment.doctor.doctor_name %>
+  <%= patient_apointment.schedule %><br />
+<% end %>
+
+<%= link_to "Back", root_path %>

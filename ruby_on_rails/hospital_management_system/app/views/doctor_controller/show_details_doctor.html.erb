@@ -1,0 +1,12 @@
+
+ <%= @doctor.doctor_name %><br/>
+<% @doctor.appointments.each do |doctor_apointment| %>
+ <% if doctor_apointment.schedule.strftime("%F")==Time.now.strftime("%F") %>
+  <%= doctor_apointment.patient.patient_name %><br/>
+
+  <%= doctor_apointment.schedule %>
+  <br />
+  <% end%>
+<% end %>
+
+<%= link_to "Back",root_path %>

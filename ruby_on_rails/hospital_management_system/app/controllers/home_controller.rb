@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
 	def index
-		@appointments = Appointment.where("Date(schedule) = #{Date.today}")
+		@appointments = Appointment.all
 	end
 end
