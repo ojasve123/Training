@@ -1,5 +1,56 @@
+<!DOCTYPE html>
+<html>
+<style>
+.head{
+	height :100px;
+	background-color: WhiteSmoke;
+	color:Dodgerblue;
 
- <%= @doctor.doctor_name %><br/>
+}
+.record{
+	height :750px;
+	background-color: Seashell;
+	color:SkyBlue;
+}
+.body{
+    background-color:Snow;
+
+}
+
+}
+
+</style>
+<body>
+	<a href="http://google.com" target="_blank">Google </a>
+	<%= link_to "Google", "http://google.com", target: "_blank" %>
+
+<div class="head">
+	<%= image_tag("berylimage.png" , width:"80" ,height:"100", align:"left")%>
+<h1 align="Center";>HOSPITAL MANAGEMENT SYSTEM </h1>
+
+</div>
+
+<div class="record" > 
+  <style>
+<table>
+<tr>
+    <th>Doctor</th>
+    <th>Patient</th>
+    <th>Schedule</th>
+  </tr>
+  <tr>
+    <td>hi</td>
+    <td>ji</td>
+    <td>jhi</td>
+  </tr>
+  </table>
+
+  </style>
+
+
+</div>
+ </body>
+ </html>
 <% @doctor.appointments.each do |doctor_apointment| %>
  <% if doctor_apointment.schedule.strftime("%F")==Time.now.strftime("%F") %>
   <%= doctor_apointment.patient.patient_name %><br/>
