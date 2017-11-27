@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  get "/patients", to: "patient#show_details", as: "patient_details"
-  get "/doctors", to: "doctor_controller#show_details_doctor", as: "doctor_details"
+  get "/patient/:id", to: "patient#show_details", as: "patient_details"
+  get "/doctor/:id", to: "doctor#show_details1", as: "doctor_details"
+
+  post "/create_doctor", to: "doctor#create_doctor", as: "create_doctor"
 end

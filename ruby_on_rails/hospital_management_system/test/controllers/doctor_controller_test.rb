@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class DoctorControllerControllerTest < ActionDispatch::IntegrationTest
+class DoctorControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
