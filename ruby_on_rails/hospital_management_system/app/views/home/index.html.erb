@@ -2,7 +2,7 @@
 <html>
 <style>
 .head{
-	height :100px;
+	height :150px;
 	background-color: WhiteSmoke;
 	color:Dodgerblue;
 
@@ -27,12 +27,16 @@
 
 </style>
 <body>
-	<a href="http://google.com" target="_blank">Google </a>
 	<%= link_to "Google", "http://google.com", target: "_blank" %>
 
 <div class="head">
-	<%= image_tag("berylimage.png" , width:"80" ,height:"100", align:"left")%>
-<h1 align="Center";>HOSPITAL MANAGEMENT SYSTEM </h1>
+  <%= image_tag("berylimage.png" , width:"80" ,height:"100", align:"left")%>
+  <h1 align="center",class=;>HOSPITAL MANAGEMENT SYSTEM </h1>
+	
+  <h6 align="Right";><%=link_to "CREATE DOCTOR",create_doctor_path %> </h6>
+<h6 align="Right";><%=link_to "CREATE PATIENT",create_patient_path %> </h6>
+
+
 
 </div>
 <div class="record" > 
@@ -55,7 +59,7 @@ th, td {
       <th>Schedule</th>
     </tr>
    	<% @appointments.each do |appointment| %>
-   	  <tr>
+   	  <tr>  
         <td><%=  link_to appointment.doctor.doctor_name,doctor_details_path(id: appointment.doctor.id) %> </td>
         <td><%= appointment.doctor.department.department_name %></td>
         <td><%= link_to appointment.patient.patient_name, patient_details_path(id: appointment.patient.id ) %></td>
