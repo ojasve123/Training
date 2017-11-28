@@ -1,75 +1,67 @@
 <style>
-.head{
-  height :100px;
-  background-color: WhiteSmoke;
-  color:Dodgerblue;
-
-}
-.record{
-  height :750px;
-  background-color: Seashell;
-  color:SkyBlue;
-}
-.body{
+  .head{
+     height :100px;
+     background-color: WhiteSmoke;
+     color:Dodgerblue;
+        }
+  .record{
+    height :750px;
+    background-color: Seashell;
+    color:SkyBlue;
+        }
+  .body{
     background-color:Snow;
-
-}
+       }
 .list, .list2{
   display: inline-block;
-}
+       }
 .list{
   vertical-align: top;
   padding-left: 100px;
-}
+       }
 
 
 </style>
-<body>
-  <a href="http://google.com" target="_blank">Google </a>
-  <%= link_to "Google", "http://google.com", target: "_blank" %>
-
-<div class="head">
-  <%= image_tag("berylimage.png" , width:"80" ,height:"100", align:"left")%>
-<h1 align="Center";>HOSPITAL MANAGEMENT SYSTEM </h1>
-
-</div>
-<div class="record" > 
-  <style>
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 15px;
-    text-align: left;
-}
-  </style>
-
-   <table align="left">
+  <body>
+    <a href = "http://google.com" target = "_blank">Google </a>
+    <%= link_to "Google", "http://google.com", target: "_blank" %>
+  <div class = "head">
+    <%= image_tag("berylimage.png" , width:"80" ,height:"100", align:"left")%>
+    <h1 align = "Center";>HOSPITAL MANAGEMENT SYSTEM </h1>
+  </div>
+  <div class = "record" > 
+    <style>
+  table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+                }
+  th, td {
+      padding: 15px;
+      text-align: left;
+        }
+</style>
+  <table align = "left">
     <tr>
       <th>Doctor</th>
       <th>Patient</th>
       <th>Schedule</th>
     </tr>
     <% @doctor.appointments.each do |doctor_apointment| %>
-      <tr>        
+      <tr>                       
+        <% if doctor_apointment.schedule.strftime("%F") == Time.now.strftime("%F") %>
+          <td><%= @doctor.doctor_name %> </td>
+          <td><%= doctor_apointment.patient.patient_name %></td>           
+          <td><%=  doctor_apointment.schedule%></td>        
+        <% else %>
         <td><%= @doctor.doctor_name %> </td>
-       
-         <% if doctor_apointment.schedule.strftime("%F")==Time.now.strftime("%F") %>
-           <td><%= doctor_apointment.patient.patient_name %></td>           
-           <td><%=  doctor_apointment.schedule%></td>
-         <% end %>
-      <%end %>
-      </tr>
-
-
-    
-  
-  
-    </table> 
-    <%= link_to "Back",root_path %>
-
-</div>
+          <td><%= doctor_apointment.patient.patient_name %></td>           
+          <td><%=  doctor_apointment.schedule%></td>
+          <% end %>
+    <%end %>
+      </tr>        
+  </table> 
+  <%= link_to "Back",root_path %>
+  </div>
 </body>
 
 

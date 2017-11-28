@@ -1,71 +1,56 @@
-<!DOCTYPE html>
-<html>
 <style>
-.head{
-	height :100px;
-	background-color: WhiteSmoke;
-	color:Dodgerblue;
-
-}
-.record{
-	height :750px;
-	background-color: Seashell;
-	color:SkyBlue;
-}
-.body{
+  .head{
+	   height :100px;
+	   background-color: WhiteSmoke;
+	   color:Dodgerblue;
+        }
+  .record{
+    height :750px;
+	  background-color: Seashell;
+	  color:SkyBlue;
+        }
+  .body{
     background-color:Snow;
-
-}
+       }
 .list, .list2{
 	display: inline-block;
-}
+       }
 .list{
 	vertical-align: top;
 	padding-left: 100px;
-}
-
-
+       }
 </style>
-<body>
-	<a href="http://google.com" target="_blank">Google </a>
-	<%= link_to "Google", "http://google.com", target: "_blank" %>
-
-<div class="head">
-	<%= image_tag("berylimage.png" , width:"80" ,height:"100", align:"left")%>
-<h1 align="Center";>HOSPITAL MANAGEMENT SYSTEM </h1>
-
-</div>
-<div class="record" > 
-  <style>
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 15px;
-    text-align: left;
-}
-  </style>
-
-   <table align="left">
+  <body>
+	  <a href = "http://google.com" target = "_blank">Google </a>
+	  <%= link_to "Google", "http://google.com", target: "_blank" %>
+  <div class = "head">
+	  <%= image_tag("berylimage.png" , width:"80" ,height:"100", align:"left")%>
+    <h1 align = "Center";>HOSPITAL MANAGEMENT SYSTEM </h1>
+  </div>
+  <div class = "record" > 
+    <style>
+  table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+               }
+  th, td {
+      padding: 15px;
+      text-align: left;
+           }
+</style>
+  <table align = "left">
    	<tr>
       <th>Doctor</th>
       <th>Patient</th>
       <th>Schedule</th>
     </tr>
-   	<%  %>
-   	  <tr>
-        <td><%=   %> </td>
-        <td><%=  %></td>
-        <td><%= %></td>
-        <td><%=  %></td>
-      </tr>
-
-
-   	
-  
-  
-    </table> 
+   	<% @patient.appointments.each do |patient_apointment| %>
+   	<tr>
+      <td><%= patient_apointment.doctor.doctor_name %> </td>
+      <td><%= patient_apointment.patient.patient_name  %></td>
+      <td><%= patient_apointment.schedule %></td>
+    </tr>
+   </table> 
 </div>
 </body>
 </html>
@@ -77,11 +62,11 @@ th, td {
 
 
 
-Name: <%= @patient.patient_name %><br />
+Name: <%=  %><br />
 
-<% @patient.appointments.each do |patient_apointment| %>
-  <%= patient_apointment.doctor.doctor_name %>
-  <%= patient_apointment.schedule %><br />
+
+  
+  <%=  %><br />
 <% end %>
 
 <%= link_to "Back", root_path %>

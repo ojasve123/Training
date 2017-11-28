@@ -1,22 +1,21 @@
-<h1 align="center">PLEASE FILL IN THE DOCTOR DETAILS</h1>
-<form action="/create_doctor_form" method="post">
+<h1 align = "center"><b>PLEASE FILL IN THE DOCTOR DETAILS</b></h1>
+<form action = "/create_doctor_form" method = "post">
   department_id:<br>
-  <select name="department_id">
-    <option value="select">select</option>
-    <option value=1>cardiology</option>
-    <option value=3>general physician</option>
-    <option value=2>neurology</option>
-    <option value=4>psychology</option>
-  </select><br/>
- doctor name:<br>
-   <input type="text" name="doctor_name"value=""><br>
-   date_of_joining:<br>
-   <input type="datetimes" name="date_of_joining"value=""><br>
+    <select name = "department_id">
+      <option value = "select">select</option>
+      <option value = 1 >cardiology</option>
+      <option value = 3 >general physician</option>
+      <option value = 2 >neurology</option>
+      <option value = 4 >psychology</option>
+    </select><br/>
+  doctor name:<br> 
+    <input type = "text" name = "doctor_name"value = ""><br>
+  date_of_joining:<br>
+    <input type = "datetimes" name="date_of_joining"value = "<%=Time.now.strftime("%F")%>"><br>
   doctor address:<br>
-  <input type="text" name="address" value=""><br>
+    <input type = "text" name = "address" value = ""><br>
   gender:<br>
-  <input type="text" name="gender" value=""><br>
-  
-  <input type="submit" value="Submit">
-  <input type="reset">
-   </form>
+    <input type = "text" name = "gender" value = ""><br>  
+    <input type = "submit" value = "Submit">
+    <input type = "reset">
+</form>
