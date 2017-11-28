@@ -5,7 +5,7 @@
      color:Dodgerblue;
         }
   .record{
-    height :750px;
+    height :350px;
     background-color: Seashell;
     color:SkyBlue;
         }
@@ -38,7 +38,7 @@
       text-align: left;
         }
 </style>
-  <table align = "left">
+  <table style="background-color: Seashell;" align = "left">
     <tr>
       <th>Doctor</th>
       <th>Patient</th>
@@ -46,21 +46,21 @@
     </tr>
     <% @doctor.appointments.each do |doctor_apointment| %>
       <tr>                       
-        <!--<% if doctor_apointment.schedule.strftime("%F") == Time.now.strftime("%F") %>
+        <% if doctor_apointment.schedule.strftime("%F") == Time.now.strftime("%F") %>
           <td><%= doctor_apointment.doctor.doctor_name %> </td>
           <td><%= doctor_apointment.patient.patient_name %></td>           
           <td><%=  doctor_apointment.schedule%></td>        
         <% else %>
-      -->
         <td><%= @doctor.doctor_name %> </td>
           <td><%= doctor_apointment.patient.patient_name %></td>           
-          <td><%=  doctor_apointment.schedule%></td>
+          <td><%= doctor_apointment.schedule%></td>
           <% end %>
     <%end %>
       </tr>        
-  </table> 
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-  <%= link_to "Back",root_path %>
+  </table>   
+  </div>
+  <div>
+    <%= link_to "Back",root_path %>
   </div>
 </body>
 
