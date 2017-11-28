@@ -8,7 +8,7 @@
 
 }
 .record{
-	height :750px;
+	height :800px;
 	background-color: Seashell;
 	color:SkyBlue;
 }
@@ -76,6 +76,14 @@ th, td {
 <div class ="body">
 	<div class="list2">
  <form action="/create_doctor" method="post">
+  Department name<br>
+  <select name="departments">
+    <option value="select">select</option>
+    <option value="cardiology">cardiology</option>
+    <option value="neurology">neurology</option>
+    <option value="general physician">general physician</option>
+    <option value="psychology">psychology</option>
+  </select><br/>
   Doctor name:<br>
   <select name="doctors">
   	<option value="select">select</option>
@@ -84,21 +92,14 @@ th, td {
     <option value="naman">naman</option>
     <option value="manu">manu</option>
     <option value="manan">manan</option>
-    <option value="">mahendra</option>
-     <option value="">lokesh</option>
+    <option value="mahendra">mahendra</option>
+     <option value="lokesh">lokesh</option>
 
   </select>
  <!-- <input type="text" name="doctor_name" value="">--><br>
   patient name:<br>
   <input type="text" name="patient_name" value=""><br>
-  Department name<br>
-  <select name="departments">
-  	<option value="select">select</option>
-    <option value="cardiology">cardiology</option>
-    <option value="neurology">neurology</option>
-    <option value="general physician">general physician</option>
-    <option value="psychology">psychology</option>
-  </select>
+  
  <!-- <input type="text" name="department_name" value="">--><br>
   schedule-appointment<br>
   <input type="text" name="shedule" value=""><br><br>
@@ -110,6 +111,7 @@ th, td {
   <input type="checkbox" name="history" value="">cough<br>
   <input type="checkbox" name="history" value="">fever<br>
   <input type="submit" value="Submit">
+  <input type="reset" value="reset">
  </form>
  </div>
  <div class ="list"> 
@@ -126,9 +128,6 @@ th, td {
  </dl>
 </div>
 </div>
-
-
- <!--<button type="button"></button> -->
- 
+<!--<button type="button"></button> --> 
 </body>
 </html> 

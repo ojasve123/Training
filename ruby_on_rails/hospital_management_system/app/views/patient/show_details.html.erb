@@ -40,17 +40,20 @@
 </style>
   <table align = "left">
    	<tr>
-      <th>Doctor</th>
       <th>Patient</th>
+      <th>Doctor</th>
       <th>Schedule</th>
     </tr>
    	<% @patient.appointments.each do |patient_apointment| %>
    	<tr>
-      <td><%= patient_apointment.doctor.doctor_name %> </td>
-      <td><%= patient_apointment.patient.patient_name  %></td>
+      <td><%= @patient.patient_name %> </td>
+      <td><%= patient_apointment.doctor.doctor_name  %></td>
       <td><%= patient_apointment.schedule %></td>
+      <% end %>
     </tr>
-   </table> 
+   </table>
+   <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> 
+   <%= link_to "Back", root_path %>
 </div>
 </body>
 </html>
@@ -62,11 +65,6 @@
 
 
 
-Name: <%=  %><br />
 
 
-  
-  <%=  %><br />
-<% end %>
 
-<%= link_to "Back", root_path %>

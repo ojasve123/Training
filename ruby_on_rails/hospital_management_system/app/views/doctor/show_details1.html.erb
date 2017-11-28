@@ -19,8 +19,6 @@
   vertical-align: top;
   padding-left: 100px;
        }
-
-
 </style>
   <body>
     <a href = "http://google.com" target = "_blank">Google </a>
@@ -48,11 +46,12 @@
     </tr>
     <% @doctor.appointments.each do |doctor_apointment| %>
       <tr>                       
-        <% if doctor_apointment.schedule.strftime("%F") == Time.now.strftime("%F") %>
-          <td><%= @doctor.doctor_name %> </td>
+        <!--<% if doctor_apointment.schedule.strftime("%F") == Time.now.strftime("%F") %>
+          <td><%= doctor_apointment.doctor.doctor_name %> </td>
           <td><%= doctor_apointment.patient.patient_name %></td>           
           <td><%=  doctor_apointment.schedule%></td>        
         <% else %>
+      -->
         <td><%= @doctor.doctor_name %> </td>
           <td><%= doctor_apointment.patient.patient_name %></td>           
           <td><%=  doctor_apointment.schedule%></td>
@@ -60,6 +59,7 @@
     <%end %>
       </tr>        
   </table> 
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
   <%= link_to "Back",root_path %>
   </div>
 </body>
