@@ -10,7 +10,7 @@ skip_before_action :verify_authenticity_token
   end
   
   def insert_patient_form
-    Patient.create(patient_name: params[:patient_name],address: params[:address], disease_history: params[:disase_history]) 
+    Patient.create(patient_name: params[:patient_name],address: params[:address],date_of_joining: params[:date_of_joining], disease_history: params[:disase_history]) 
     redirect_to root_path
   end
 end

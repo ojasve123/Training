@@ -3,5 +3,5 @@ class Doctor < ApplicationRecord
 	belongs_to :department 
 	has_many :patients, through: :appointments
 
-	validates :name, presence: true
+	
 end
